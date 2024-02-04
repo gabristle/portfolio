@@ -1,5 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  background-color: #1C1C1C;
+  color: #D3D3D3;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0;
+  background-color: #1C1C1C;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 40vw;
+}
+body header nav a img {
+  height: 30px;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 3rem;
+}
+body header nav ul li {
+  list-style-type: none;
+}
+body header nav ul li a {
+  font-size: 18px;
+  color: #D3D3D3;
+  text-decoration: none;
+  font-weight: 400;
+}
+body header nav ul li a::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 18px;
+  background-color: #F20544;
+  width: 35px;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-in-out;
+}
+body header nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+body header nav ul li a:focus {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

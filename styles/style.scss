@@ -1,5 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+@mixin flex($align, $justify, $direction, $gap){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+$darkGray: #1C1C1C;
+$pink: #F20544;
+$blue: #0597F2;
+$orange: #F27405;
+$white: #D3D3D3;
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    background-color: $darkGray;
+    color: $white;
+    header{
+        @include flex(center, center, row, 0);
+        background-color: $darkGray;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        nav{
+            @include flex(center, space-around, row, 40vw);
+            a img{
+                height: 30px;
+            }
+            ul{
+                @include flex(center, space-around, row, 3rem);
+                li{
+                    list-style-type: none;
+                    a{
+                        font-size: 18px;
+                        color: $white;
+                        text-decoration: none;
+                        font-weight: 400;
+                        &::before{
+                            content:"";
+                            bottom: 0;
+                            position: absolute;
+                            margin-bottom: 18px;
+                            background-color: $pink;
+                            width: 35px;
+                            height: 3px;
+                            transform: scaleX(0);
+                            transform-origin: bottom right;
+                            transition: transform 0.4s ease-in-out;
+                        }
+                        &:hover::before{
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                        &:focus{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
