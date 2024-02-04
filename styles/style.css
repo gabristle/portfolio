@@ -67,4 +67,8 @@ body header nav ul li a:hover::before {
 }
 body header nav ul li a:focus {
   font-weight: 600;
+}
+body header nav ul li a:focus::before {
+  transform: scaleX(1);
+  transition: transform 0.4 step-end;
 }/*# sourceMappingURL=style.css.map */

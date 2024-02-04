@@ -65,6 +65,10 @@ body {
                         }
                         &:focus{
                             font-weight: 600;
+                            &::before{
+                            transform: scaleX(1);
+                            transition: transform 0.4 step-end;
+                            }
                         }
                     }
                 }
