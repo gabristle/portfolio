@@ -112,6 +112,10 @@ body {
                     height: 48px;
                     width: 240px;
                     font-family: 'Sancreek', serif;
+                    &:hover{
+                        background-color: $pink;
+                        color: $darkGray;
+                    }
                 }
             }
             &.sobre-mim{
@@ -137,6 +141,10 @@ body {
                     height: 48px;
                     width: 100%;
                     font-family: 'Sancreek', serif;
+                    &:hover{
+                        background-color: $blue;
+                        color: $darkGray;
+                    }
                 }
                 .sobre-mim--icons{
                     @include flex(center, center, row, 35px);
