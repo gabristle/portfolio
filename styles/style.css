@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sancreek&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +7,15 @@
 }
 
 body {
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
+  font-family: "Sanchez", serif;
+  font-weight: 200;
+  font-size: 18px;
   background-color: #1C1C1C;
   color: #D3D3D3;
+}
+body h1, body h2, body h3 {
+  font-family: "Sancreek", serif;
+  font-weight: 200;
 }
 body header {
   display: flex;
@@ -71,4 +77,77 @@ body header nav ul li a:focus {
 body header nav ul li a:focus::before {
   transform: scaleX(1);
   transition: transform 0.4 step-end;
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+}
+body main section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 15%;
+}
+body main section.home {
+  padding-top: 70px;
+  height: 700px;
+  width: 68%;
+}
+body main section.home img {
+  height: 400px;
+}
+body main section.home .home--text h2 {
+  font-size: 50px;
+}
+body main section.home .home--text h2 span {
+  color: #F20544;
+}
+body main section.home .home--text p {
+  margin: 20px 0px;
+}
+body main section.home .home--button {
+  background-color: #1C1C1C;
+  color: #F20544;
+  font-size: 18px;
+  border: solid 2px #F20544;
+  border-radius: 5px;
+  height: 48px;
+  width: 240px;
+  font-family: "Sancreek", serif;
+}
+body main section.sobre-mim {
+  height: 700px;
+  width: 65%;
+}
+body main section.sobre-mim h2, body main section.sobre-mim h3 {
+  text-align: center;
+}
+body main section.sobre-mim h2 {
+  margin-bottom: 25px;
+  font-size: 36px;
+}
+body main section.sobre-mim h3 {
+  margin: 20px 0px;
+  font-size: 28px;
+}
+body main section.sobre-mim .sobre-mim--button {
+  background-color: #1C1C1C;
+  color: #0597F2;
+  font-size: 18px;
+  border: solid 2px #0597F2;
+  border-radius: 5px;
+  height: 48px;
+  width: 100%;
+  font-family: "Sancreek", serif;
+}
+body main section.sobre-mim .sobre-mim--icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 35px;
 }/*# sourceMappingURL=style.css.map */
