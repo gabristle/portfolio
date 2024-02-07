@@ -85,6 +85,9 @@ body main {
   flex-direction: column;
   gap: 0;
 }
+body main button {
+  cursor: pointer;
+}
 body main section {
   display: flex;
   align-items: center;
@@ -158,4 +161,122 @@ body main section.sobre-mim .sobre-mim--icons {
   justify-content: center;
   flex-direction: row;
   gap: 35px;
+}
+body main section.projetos {
+  height: 700px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+body main section.projetos .projetos--cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+body main section.projetos .projetos--cards .projetos--card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #272727;
+  border-radius: 15px;
+  text-align: center;
+  width: 280px;
+  padding: 1rem;
+}
+body main section.projetos .projetos--cards .projetos--card small {
+  font-size: 12px;
+}
+body main section.projetos .projetos--cards .projetos--card p {
+  font-size: 16px;
+}
+body main section.projetos .projetos--cards .projetos--card button {
+  font-size: 16px;
+  width: 200px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Sancreek", serif;
+  color: #272727;
+}
+body main section.projetos .projetos--cards .projetos--card.card-pink h3, body main section.projetos .projetos--cards .projetos--card.card-pink small {
+  color: #F20544;
+}
+body main section.projetos .projetos--cards .projetos--card.card-pink button {
+  background-color: #F20544;
+}
+body main section.projetos .projetos--cards .projetos--card.card-pink button:hover {
+  border: solid 2px #F20544;
+  color: #F20544;
+  background-color: #272727;
+}
+body main section.projetos .projetos--cards .projetos--card.card-blue h3, body main section.projetos .projetos--cards .projetos--card.card-blue small {
+  color: #0597F2;
+}
+body main section.projetos .projetos--cards .projetos--card.card-blue button {
+  background-color: #0597F2;
+}
+body main section.projetos .projetos--cards .projetos--card.card-blue button:hover {
+  border: solid 2px #0597F2;
+  color: #0597F2;
+  background-color: #272727;
+}
+body main section.projetos .projetos--cards .projetos--card.card-orange h3, body main section.projetos .projetos--cards .projetos--card.card-orange small {
+  color: #F27405;
+}
+body main section.projetos .projetos--cards .projetos--card.card-orange button {
+  background-color: #F27405;
+}
+body main section.projetos .projetos--cards .projetos--card.card-orange button:hover {
+  border: solid 2px #F27405;
+  color: #F27405;
+  background-color: #272727;
+}
+body main section.contato {
+  height: 600px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+}
+body main section.contato .contato--content {
+  margin: 5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50%;
+}
+body main section.contato .contato--content p {
+  margin-bottom: 1.5rem;
+}
+body main section.contato .contato--content form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+body main section.contato .contato--content form input, body main section.contato .contato--content form textarea {
+  font-family: "Sanchez", serif;
+  padding: 10px;
+  width: 550px;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  color: #D3D3D3;
+}
+body main section.contato .contato--content form input {
+  height: 3rem;
+}
+body main section.contato .contato--content form textarea {
+  height: 8rem;
 }/*# sourceMappingURL=style.css.map */

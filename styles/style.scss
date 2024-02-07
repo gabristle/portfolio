@@ -16,6 +16,7 @@
 }
 
 $darkGray: #1C1C1C;
+$ligthGray: #272727;
 $pink: #F20544;
 $blue: #0597F2;
 $orange: #F27405;
@@ -83,6 +84,9 @@ body {
     }
     main{
         @include flex(center, center, column, 0);
+        button{
+            cursor: pointer;
+        }
         section{
             @include flex(center, space-around, row, 15%);
             &.home{
@@ -148,6 +152,106 @@ body {
                 }
                 .sobre-mim--icons{
                     @include flex(center, center, row, 35px);
+                }
+            }
+            &.projetos{
+                height: 700px;
+                width: 70%;
+                @include flex(center, center, column, 4rem);
+                .projetos--cards{
+                    @include flex(center, center, row, 20px);
+                    .projetos--card{
+                        @include flex(center, center, column, 1rem);
+                        background-color: $ligthGray;
+                        border-radius: 15px;
+                        text-align: center;
+                        width: 280px;
+                        padding: 1rem;
+                        small{
+                            font-size: 12px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                        button{
+                            font-size: 16px;
+                            width: 200px;
+                            height: 38px;
+                            border-radius: 5px;
+                            border: none;
+                            font-family: 'Sancreek', serif;
+                            color: $ligthGray;
+                        }
+                        &.card-pink{
+                            h3, small{
+                                color: $pink;
+                            }
+                            button{
+                                background-color: $pink;
+                                &:hover{
+                                    border: solid 2px $pink;
+                                    color: $pink;
+                                    background-color: $ligthGray;
+                                }
+                            }
+                        }
+                        &.card-blue{
+                            h3, small{
+                                color: $blue;
+                            }
+                            button{
+                                background-color: $blue;
+                                &:hover{
+                                    border: solid 2px $blue;
+                                    color: $blue;
+                                    background-color: $ligthGray;
+                                }
+                            } 
+                        }
+                        &.card-orange{
+                            h3, small{
+                                color: $orange;
+                            }
+                            button{
+                                background-color: $orange;
+                                &:hover{
+                                    border: solid 2px $orange;
+                                    color: $orange;
+                                    background-color: $ligthGray;
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+            &.contato{
+                height: 600px;
+                width: 70%;
+                @include flex(center, center, column, 0);
+                .contato--content{
+                    margin: 5rem 0rem;
+                    @include flex(center, center, row, 50%);
+                    p{
+                        margin-bottom: 1.5rem;
+                    }
+                    form{
+                        @include flex(center, center, column, 10px);
+                        input, textarea{
+                            font-family: 'Sanchez', serif;
+                            padding: 10px;
+                            width: 550px;
+                            background-color: $ligthGray;
+                            border: none;
+                            border-radius: 5px;
+                            color: $white;
+                        }
+                        input{
+                            height: 3rem;
+                        }
+                        textarea{
+                            height: 8rem;
+                        }
+                    }
                 }
             }
         }
