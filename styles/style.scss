@@ -250,8 +250,42 @@ body {
                         }
                         textarea{
                             height: 8rem;
+                            resize: none;
+                        }
+                        button{
+                            width: 100%;
+                            background-color: $darkGray;
+                            color: $orange;
+                            font-size: 18px;
+                            border: solid 2px $orange;
+                            border-radius: 5px;
+                            height: 48px;
+                            width: 100%;
+                            font-family: 'Sancreek', serif;
+                            &:hover{
+                                background-color: $orange;
+                                color: $darkGray;
+                            }
                         }
                     }
+                }
+            }
+        }
+    }
+    footer{
+        height: 200px;
+        background-color: $ligthGray;
+        @include flex(center, center, row, 20%);
+        img{
+            height: 150px;
+        }
+        .social-media{
+            @include flex(center, center, column, 1rem);
+            .social-media--icons{
+                @include flex(center, center, row, 2rem);
+                .social-media--icon{
+                    width: 50px;
+                    height: 50px;
                 }
             }
         }
