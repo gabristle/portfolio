@@ -12,28 +12,28 @@
         <nav>
             <a href="#"><img src="assets/logo.png" alt="logo"></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Mim</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="home--text">
                 <h2>Olá!<br>Eu sou a <span>Gabriella</span></h2>
                 <p>Sou uma estudante ambiciosa em busca de aprendizado constante e aprimoramento. Acredito que inovação, criatividade e pensar fora da caixa pode transformar o mundo. Vamos fazer isso juntos?</p>
-                <a href="#"><button class="home--button">Vamos!</button></a>
+                <a href="#contato"><button class="home--button">Vamos!</button></a>
             </div>
             <div class="home--img">
                 <img src="assets/retrato-gabriella.png" alt="retrato de Gabriella">
             </div>
         </section>
-        <section class="sobre-mim">
+        <section class="sobre-mim" id="sobre-mim">
             <div class="sobre-mim--img">
                 <img src="assets/retrato-nami.png" alt="retrato da gata de Gabriella, Nami">
-                <a href="#"><button class="sobre-mim--button">Download CV</button></a>
+                <a href="assets/cv_gabriellaCosta.pdf" download><button class="sobre-mim--button">Download CV</button></a>
             </div>
             <div class="sobre-mim--text">
                 <h2>Sobre mim</h2>
@@ -50,40 +50,40 @@
                 </div>
             </div>
         </section>
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h2>Projetos</h2>
             <div class="projetos--cards">
                 <div class="projetos--card card-pink">
                     <h3>Gryfo Release Notes Page</h3>
-                    <img src="" alt="preview da página de release notes da Gryfo">
+                    <img src="assets/card-gryfo.png" alt="preview da página de release notes da Gryfo">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laboriosam asperiores magnam totam nihil consequatur aperiam fugiat autem esse nesciunt, atque, voluptates fuga itaque quas enim debitis illum impedit assumenda!</p>
                     <small>Figma - HTML5 - Sass - JS</small>
                     <a href=""><button>Ver mais</button></a>
                 </div>
                 <div class="projetos--card card-orange">
                     <h3>CrochêTech</h3>
-                    <img src="" alt="preview da página de release notes da Gryfo">
+                    <img src="assets/card-crochetech.png" alt="preview da página de release notes da Gryfo">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laboriosam asperiores magnam totam nihil consequatur aperiam fugiat autem esse nesciunt, atque, voluptates fuga itaque quas enim debitis illum impedit assumenda!</p>
-                    <small>Figma - HTML5 - Sass - JS</small>
+                    <small>Figma</small>
                     <a href=""><button>Ver mais</button></a>
                 </div>
                 <div class="projetos--card card-blue">
                     <h3>Braille Cube</h3>
-                    <img src="" alt="preview da página de release notes da Gryfo">
+                    <img src="assets/card-braillecube.png" alt="preview da página de release notes da Gryfo">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laboriosam asperiores magnam totam nihil consequatur aperiam fugiat autem esse nesciunt, atque, voluptates fuga itaque quas enim debitis illum impedit assumenda!</p>
-                    <small>Figma - HTML5 - Sass - JS</small>
+                    <small>Figma - (Hackabee)</small>
                     <a href=""><button>Ver mais</button></a>
                 </div>
                 <div class="projetos--card card-pink">
                     <h3>GatoRico</h3>
-                    <img src="" alt="preview da página de release notes da Gryfo">
+                    <img src="assets/card-gatorico.png" alt="preview da página de release notes da Gryfo">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laboriosam asperiores magnam totam nihil consequatur aperiam fugiat autem esse nesciunt, atque, voluptates fuga itaque quas enim debitis illum impedit assumenda!</p>
-                    <small>Figma - HTML5 - Sass - JS</small>
+                    <small>Figma</small>
                     <a href=""><button>Ver mais</button></a>
                 </div>
             </div>
         </section>
-        <section class="contato">
+        <section class="contato" id="contato">
             <h2>Vamos conversar?</h2>
             <div class="contato--content">
                 <div class="contato--informations">
@@ -115,5 +115,6 @@
         </div>
         <img src="assets/retrato-nami.png" alt="retrato da gata de Gabriella, Nami">
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -190,6 +190,11 @@ body main section.projetos .projetos--cards .projetos--card {
   width: 280px;
   padding: 1rem;
 }
+body main section.projetos .projetos--cards .projetos--card img {
+  width: 240px;
+  height: 130px;
+  border-radius: 5px;
+}
 body main section.projetos .projetos--cards .projetos--card small {
   font-size: 12px;
 }
