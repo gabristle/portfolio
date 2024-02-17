@@ -124,7 +124,7 @@ body {
             }
             &.sobre-mim{
                 height: 700px;
-                width: 65%;
+                width: 75%;
                 h2, h3{
                     text-align: center;
                 }
@@ -152,6 +152,10 @@ body {
                 }
                 .sobre-mim--icons{
                     @include flex(center, center, row, 35px);
+                }
+                p{
+                    font-size: 16px;
+                    overflow-wrap: break-word;
                 }
             }
             &.projetos{
@@ -279,6 +283,7 @@ body {
     }
     footer{
         height: 200px;
+        width: 100%;
         background-color: $ligthGray;
         @include flex(center, center, row, 20%);
         img{

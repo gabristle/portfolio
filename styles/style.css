@@ -128,7 +128,7 @@ body main section.home .home--button:hover {
 }
 body main section.sobre-mim {
   height: 700px;
-  width: 65%;
+  width: 75%;
 }
 body main section.sobre-mim h2, body main section.sobre-mim h3 {
   text-align: center;
@@ -161,6 +161,10 @@ body main section.sobre-mim .sobre-mim--icons {
   justify-content: center;
   flex-direction: row;
   gap: 35px;
+}
+body main section.sobre-mim p {
+  font-size: 16px;
+  overflow-wrap: break-word;
 }
 body main section.projetos {
   height: 700px;
@@ -303,6 +307,7 @@ body main section.contato .contato--content form button:hover {
 }
 body footer {
   height: 200px;
+  width: 100%;
   background-color: #272727;
   display: flex;
   align-items: center;
